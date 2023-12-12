@@ -1,0 +1,85 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* This ensures the entire viewport height is covered. */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f0f0f0; /* Add background color for clarity. */
+  }
+
+  /* Add this CSS style to set text-align to right */
+  #displayId {
+    text-align: right;
+  }
+
+  .display{
+    margin-bottom: 3rem;
+  }
+
+  .input-style {
+    height: 4rem;
+    width: 31rem;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    font-size: 2.8rem;
+    font-weight: bolder;
+    padding: 5px 20px;
+    letter-spacing: 10px;
+  }
+
+  .main-div {
+    width: 500px;
+    height: 500px;
+    background-color: #222D44;
+    border-radius: 1.5rem;
+    padding: 20px
+  }
+
+  .btn-style {
+    height: 3.2rem;
+    width: 6rem;
+    border-radius: 1rem;
+    color: black;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    background-color: #eae3db;
+  }
+
+  .button-div {
+    display: flex;
+    justify-content: space-around;
+    margin: 40px 5px;
+  }
+
+  .btn-del-style{
+    height: 3rem;
+    width: 6rem;
+    border-radius: 1rem;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    background-color: #5F7299;
+  }
+
+  .btn-reset {
+    height: 3.2rem;
+    width: 13.5rem;
+    border-radius: 1rem;
+    color: rgb(255, 255, 255);
+    font-size: 1.5rem;
+    font-weight: bolder;
+    background-color: #5F7299;
+  }
+
+  .btn-total {
+    height: 3.2rem;
+    width: 13.5rem;
+    border-radius: 1rem;
+    color: rgb(255, 255, 255);
+    font-size: 1.5rem;
+    font-weight: bolder;
+    background-color: #E0372B;
+  }

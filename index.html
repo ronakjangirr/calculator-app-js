@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Parcel Sandbox</title>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" type="text/css" href="CalculatorStyle.css">
+</head>
+<style>
+</style>
+
+<body>
+  <div id="app"></div>
+  <div class="calculator">
+    <div class="display">
+      <input class="input-style" type="text" id="displayId" disabled />
+    </div>
+    <div class="main-div">
+      <div class="button-div">
+        <button class="btn-style" onclick="writeOnDisplay('7')">7</button>
+        <button class="btn-style" onclick="writeOnDisplay('8')">8</button>
+        <button class="btn-style" onclick="writeOnDisplay('9')">9</button>
+        <button class="btn-del-style" onclick="backSpaceFun()">DEL</button>
+      </div>
+      <div class="button-div">
+        <button class="btn-style" onclick="writeOnDisplay('4')">4</button>
+        <button class="btn-style" onclick="writeOnDisplay('5')">5</button>
+        <button class="btn-style" onclick="writeOnDisplay('6')">6</button>
+        <button class="btn-style" onclick="writeOnDisplay('+')">+</button>
+      </div>
+      <div class="button-div">
+        <button class="btn-style" onclick="writeOnDisplay('1')">1</button>
+        <button class="btn-style" onclick="writeOnDisplay('2')">2</button>
+        <button class="btn-style" onclick="writeOnDisplay('3')">3</button>
+        <button class="btn-style" onclick="writeOnDisplay('-')">-</button>
+      </div>
+      <div class="button-div">
+        <button class="btn-style" onclick="writeOnDisplay('.')">.</button>
+        <button class="btn-style" onclick="writeOnDisplay('0')">0</button>
+        <button class="btn-style" onclick="writeOnDisplay('/')">/</button>
+        <button class="btn-style" onclick="writeOnDisplay('*')">x</button>
+      </div>
+      <div class="button-div">
+        <button class="btn-reset" onclick="clearDisplay()">RESET</button>
+        <button class="btn-total" onclick="calculateFun()">=</button>
+      </div>
+    </div>
+  </div>
+  <script src="calculatorJs.js"></script>
+  <!-- <script>
+
+let screen = document.getElementById("displayId");
+let initialVal = "";
+let isCalculated = false; // Added a flag
+
+function writeOnDisplay(input) {
+  if (isCalculated) {
+    // If a calculation has been performed, reset the input.
+    initialVal = "";
+    isCalculated = false;
+  }
+
+  if (input === '.') {
+    if (!initialVal.includes('.')) {
+      initialVal += input;
+    }
+  } else {
+    if (initialVal.length < 6) {
+      initialVal += input;
+    }
+  }
+  screen.value = initialVal;
+}
+
+console.log("screen");
+
+function clearDisplay() {
+  initialVal = "";
+  screen.value = initialVal;
+  isCalculated = false; // Resetting the flag
+}
+
+function calculateFun() {
+  try {
+    calculateVal = eval(initialVal);
+    if (calculateVal.toString().length <= 6) {
+      screen.value = calculateVal;
+    } else {
+      screen.value = "";
+    }
+    isCalculated = true; // Setting the flag to true
+  } catch (error) {
+    calculateVal = "Error";
+    screen.value = calculateVal;
+    isCalculated = true; // Setting the flag to true
+  }
+}
+
+function backSpaceFun() {
+  if (initialVal === "Error" || initialVal === "") {
+    clearDisplay();
+  } else {
+    if (isCalculated) {
+      // If a calculation has been performed, reset the input.
+      isCalculated = false;
+    } else {
+      initialVal = initialVal.slice(0, -1);
+    }
+    screen.value = initialVal;
+  }
+}
+
+  </script> -->
+</body>
+
+</html>
